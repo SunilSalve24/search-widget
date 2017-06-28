@@ -1,0 +1,21 @@
+{
+  "name": "search-componet",
+  "description": "search componet with angular",
+  "main": "index.js",
+  "authors": [
+    "Sunil Salve"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "angular": "^1.6.4"
+  }
+}
