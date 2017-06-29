@@ -1,0 +1,52 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important; }
+
+.search-header {
+  background-color: #563d7c;
+  padding: 10px; }
+  .search-header input {
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    width: 97%;
+    padding: 5px;
+    border-bottom: 1px solid #9588a8; }
+    .search-header input:focus {
+      outline: none; }
+  .search-header .glyphicon {
+    color: #fff;
+    opacity: 0.5; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+  opacity: 0.5; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 0.5; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 0.5; }
+
+.virtual-flyout {
+  position: absolute;
+  width: 100%;
+  top: 47px;
+  box-shadow: 0 0 10px 0; }
+  .virtual-flyout .client-name {
+    margin: 0px; }
+  .virtual-flyout .client-dtl {
+    padding: 10px 25px; }
+  .virtual-flyout .odd {
+    background-color: #efefef; }
+  .virtual-flyout .no-result {
+    text-align: center;
+    padding: 10px; }
+
+.search-container {
+  position: relative; }

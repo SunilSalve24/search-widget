@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="searchTypeheadApp">
+<head>
+    <title>Search Typehead Widget</title>
+    
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="lib/normalize-css/normalize.css">
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/underscore/underscore-min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/controller/search-widget-controller.js"></script>
+    <script src="js/services/search-widget-service.js"></script>
+    <script src="js/controller/search-widget-componet.js"></script>
+
+</head>
+<body ng-controller="clientDetailscontroller as cdl">
+  <div class="container">
+    <search-widget client-list="cdl.clientList" on-update='cdl.getClientList(searchText)'></search-widget>
+  <div>  
+</body>
+  
+</html>
+
