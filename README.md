@@ -14,6 +14,6 @@ Run Application :-
 Run following command in project root folder 
   - Run npm install 
   - bower install
-  - grunt
+  - grunt dev
   - node app.js
 
