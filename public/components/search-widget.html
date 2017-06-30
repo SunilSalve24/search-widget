@@ -1,7 +1,7 @@
 <div class="search-container">
 <div class="search-header">
     <span class="input-control">
-        <span class="glyphicon glyphicon-search"></span>    
+        <i class="material-icons">search</i>    
         <input  ng-model="$ctrl.searchText" placeholder="SEARCH (Client Name / Policy Number)" type="search" ng-change="$ctrl.onUpdate({searchText: $ctrl.searchText})" />
     </span>    
 </div>
@@ -9,17 +9,17 @@
 <div class="virtual-flyout" ng-show="$ctrl.searchText" ng-cloak >
     <div  ng-repeat="item in $ctrl.clientList track by $index " class="client-dtl" ng-class="$index % 2 == 0 ? 'even' : 'odd'">
         <h3 ng-bind="item.name" class="client-name"></h3>       
-        <div class="row list-unstyled">            
-            <div class="col-sm-4">
-                <i class="glyphicon glyphicon-earphone"> </i>
+        <div class="flex-row-container list-unstyled">            
+            <div class="flex item">
+                <i class="material-icons">call</i>
                 <span ng-bind="item.contact"></span>
             </div>
-            <div class="col-sm-4">
-                    <i class="glyphicon glyphicon-envelope"> </i>
+            <div class="flex item">
+                    <i class="material-icons">email</i>
                     <span ng-bind="item.email"></span>
             </div>
-            <div class="col-sm-4">
-                    <i class="glyphicon glyphicon-file"> </i>
+            <div class="flex item">
+                    <i class="material-icons">description</i>
                     <span ng-bind="item.policyNo"></span>
             </div>
         </div>

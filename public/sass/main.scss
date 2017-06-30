@@ -3,12 +3,51 @@
 $col-blue: #563d7c;
 $col-white:  #fff;
 $col-light-grey: #efefef;
+$col-main-font: #534666;
 
 // Position
 
 $pReative: relative;
 
 [ng\:cloak],[ng-cloak],.ng-cloak{display:none !important}
+
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  color: $col-main-font;
+  font-size: 14px
+}
+
+.container{
+  max-width:1024px;
+  margin: 0 auto;
+}
+.flex-row-container{
+  display: flex;
+  flex-direction: row;
+
+  .flex {
+    flex:1;
+  }
+}
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    i{
+      margin-right: 5px
+    }
+
+  }
+
+
 .search-header{
   background-color:$col-blue;
   padding: 10px; 
@@ -26,9 +65,11 @@ $pReative: relative;
       }
   }
 
- .glyphicon {
+  i {
     color: $col-white;
     opacity:  0.5;
+    font-size: 26px;
+    vertical-align: middle;
   }
 }
 
@@ -50,7 +91,9 @@ $pReative: relative;
     top: 47px;
     box-shadow: 0 0 10px 0;
 .client-name{
-    margin: 0px;
+    margin: 0 0 10px ;
+    font-weight: normal;
+    font-size: 23px;
   }
 
 .client-dtl{
@@ -68,7 +111,6 @@ $pReative: relative;
 .search-container{
   position: $pReative;
 }
-
-
-
-
+.material-icons{
+  font-size: 19px;
+}
