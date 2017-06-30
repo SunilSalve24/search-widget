@@ -17,3 +17,5 @@ Run following command in project root folder
   - grunt dev
   - node app.js
 
+Please load http://localhost:8282 URL
+
