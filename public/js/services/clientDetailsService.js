@@ -16,8 +16,15 @@ angular.module('searchTypeheadApp')
     self.getData = function(searchText) {
         var dataList = [];
         if(searchText && searchText.length > 0)
-          dataList = $filter('filter')(self.dummyDataList, searchText)
+          dataList = _.filter(self.dummyDataList, function (item) {
+                  return self.searchfilter(item, searchText);
+              });
         
         return dataList;
       }
+
+      self.searchfilter = function(item, toSearch) {    
+        return (item.name.toLowerCase().indexOf(toSearch.toLowerCase()) > -1 || item.policyNo.toLowerCase().indexOf(toSearch.toLowerCase()) > -1) ? true : false;
+      } 
+
   });
