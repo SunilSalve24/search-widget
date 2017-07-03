@@ -5,8 +5,8 @@ We have used :-
   - Bootstrap
   - HTML5
   - Scss
-  - Grunt
-  - Bowera
+  - Gulp
+  - Bower
   - Node js (Express Server)
   
 Run Application :- 
@@ -14,8 +14,10 @@ Run Application :-
 Run following command in project root folder 
   - Run npm install 
   - bower install
-  - grunt dev
+  - grunt sass
   - node app.js
 
 Please load http://localhost:8282 URL
+
+
 
