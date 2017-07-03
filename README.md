@@ -19,5 +19,7 @@ Run following command in project root folder
 
 Please load http://localhost:8282 URL
 
-
+![Alt text](/public/screenshots/1.png?raw=true)
+![Alt text](/public/screenshots/2.png?raw=true)
+![Alt text](/public/screenshots/3.png?raw=true)
 
