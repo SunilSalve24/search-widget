@@ -14,7 +14,7 @@ Run Application :-
 Run following command in project root folder 
   - Run npm install 
   - bower install
-  - grunt sass
+  - gulp sass
   - node app.js
 
 Please load http://localhost:8282 URL

@@ -5,6 +5,12 @@ $col-white:  #fff;
 $col-light-grey: #efefef;
 $col-main-font: #534666;
 
+
+@mixin element-opacity($opac) {
+   opacity: $opac;
+}
+
+
 // Position
 
 $pReative: relative;
@@ -15,7 +21,7 @@ $pReative: relative;
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -67,6 +73,7 @@ body {
 
   i {
     color: $col-white;
+    @include element-opacity(0.5); 
     opacity:  0.5;
     font-size: 26px;
     vertical-align: middle;
@@ -75,15 +82,15 @@ body {
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    $col-white;
-    opacity:  0.5;
+    @include element-opacity(0.5); 
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    $col-white;
-   opacity:  0.5;
+   @include element-opacity(0.5); 
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    $col-white;
-   opacity:  0.5;
+    @include element-opacity(0.5); 
 }
 .virtual-flyout {
     position: absolute;
